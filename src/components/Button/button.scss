@@ -1,0 +1,20 @@
+.button {
+  height: 40px;
+  padding: 0 20px;
+  border-radius: 5px;
+  border-width: 0px;
+  font-weight: bold;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: #EC823E;
+  background-color: #F7F8FD;
+  cursor:pointer;
+
+  &--orange{
+    padding: 0;
+    padding-left: 30px;
+    padding-right: 35px;
+    color: #FFE3BB;
+    background-color: #EC823E;
+  }
+}
