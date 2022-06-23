@@ -6,15 +6,16 @@ import  Button from '../components/Button/Button';
 export default {
   title: 'Example/Button',
   component: Button,
-  argTypes: {
-    backgroundColor: { control: 'color' },
-  },
+  argTypes:{
+    color: {control: "select", options: ["blue", "default"]}
+  }
 } as ComponentMeta<typeof Button>;
 
 const Template: ComponentStory<typeof Button> = (args) => <Button {...args} />;
 
 export const Primary = Template.bind({});
 Primary.args = {
-  bcolor: "orange",
+  color:"default",
+  variant: "ghost",
   label: 'Button',
 };

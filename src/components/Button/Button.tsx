@@ -2,10 +2,11 @@ import cn from "classnames";
 
 import "./button.scss";
 
-export default function Button({ label, bcolor, onClick }:any) {
+export default function Button({ label, color, onClick, variant }:any) {
   const buttonStyle = cn(
     "button",
-    { "button--orange": bcolor === "orange" }
+    { "button--ghost": variant === "ghost" },
+    { "button--blue": color === "blue" }
   );
 
   return (
