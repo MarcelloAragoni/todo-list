@@ -1,3 +1,5 @@
+$gray: hsl(234, 11%, 52%);
+
 .button {
   height: 40px;
   padding: 0 20px;
@@ -9,13 +11,10 @@
   cursor:pointer;
 
   &--ghost{
-    padding: 0;
-    padding-left: 30px;
-    padding-right: 35px;
     border: none;
   }
 
   &--blue{
-    color: hsl(234, 11%, 52%);
+    color: $gray;
   }
 }
