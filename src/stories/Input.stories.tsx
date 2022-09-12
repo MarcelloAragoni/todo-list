@@ -14,7 +14,7 @@ const Template: ComponentStory<typeof Input> = (args) => <Input {...args} />;
 
 export const Primary = Template.bind({});
 Primary.args = {
-  setInputState: () => {},
+  onChange: () => {},
   placeholder: "digite aqui",
   name: "string",
   value: "teste",

@@ -6,7 +6,7 @@ type Props = {
   placeholder: string;
   name: string;
   value: any;
-  setInputState: any;
+  onChange: any;
   variant: string;
 };
 
@@ -14,7 +14,7 @@ export default function Input({
   placeholder,
   name,
   value,
-  setInputState,
+  onChange,
   variant,
 }: Props) {
   const inputStyle = cn(
@@ -24,7 +24,7 @@ export default function Input({
   );
 
   function handleChange(event: React.ChangeEvent<HTMLInputElement>) {
-    setInputState(event.target.value);
+    onChange(event.target.value);
   }
 
   return (
