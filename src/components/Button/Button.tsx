@@ -3,17 +3,17 @@ import cn from "classnames";
 import "./button.scss";
 
 type Props = {
-  color: String;
-  label: String;
-  variant: String;
-  onClick: () => void
-}
+  color: string;
+  label: string;
+  variant: string;
+  onClick: () => void;
+};
 
-export default function Button({ label, color, onClick, variant }: Props) {
+export default function Button({label, color, onClick, variant}: Props) {
   const buttonStyle = cn(
     "button",
-    { "button--ghost": variant === "ghost" },
-    { "button--blue": color === "blue" }
+    {"button--ghost": variant === "ghost"},
+    {"button--blue": color === "blue"}
   );
 
   return (
