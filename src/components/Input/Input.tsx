@@ -5,7 +5,7 @@ import "./input.scss";
 type Props = {
   placeholder: string;
   name: string;
-  value: any;
+  value: string;
   onChange: (value: string) => void;
   variant: string;
 };
