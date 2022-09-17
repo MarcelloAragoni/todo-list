@@ -1,0 +1,18 @@
+.input{
+  height: 45px;
+  width: 300px;
+  padding-left: 35px;
+  outline:none;
+  border:none;
+  border-radius: 5px;
+
+  &--dark{
+    background-color: hsl(233, 14%, 35%);
+    color: hsl(234, 39%, 85%);
+  }
+
+  &--light{
+    background-color: hsl(0, 0%, 98%);
+    color: hsl(240, 5%, 18%);
+  }
+}
