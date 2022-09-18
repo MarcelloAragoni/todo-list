@@ -12,8 +12,6 @@ export default function Checkbox() {
   const containerClass = `checkbox ${checkedClass}`.trim();
 
   return (
-    <div className={containerClass} onClick={toggle}>
-      <div className="checkedimage" />
-    </div>
+    <input className={containerClass} onClick={toggle} type="checkbox"></input>
   );
 }
