@@ -1,4 +1,5 @@
 import { useState } from "react";
+import cn from "classnames";
 import "./checkbox.scss";
 
 export default function Checkbox() {
@@ -8,10 +9,7 @@ export default function Checkbox() {
     setChecked(!checked);
   }
 
-  const checkedClass = checked ? "checkbox--checked" : "";
-  const containerClass = `checkbox ${checkedClass}`.trim();
+  const checkedClass = cn("checkbox", { "checkbox--checked": checked });
 
-  return (
-    <input className={containerClass} onClick={toggle} type="checkbox"></input>
-  );
+  return <input className={checkedClass} onClick={toggle} type="checkbox" />;
 }
