@@ -9,11 +9,12 @@ type Props = {
   onClick: () => void;
 };
 
-export default function Button({label, color, onClick, variant}: Props) {
+export default function Button({ label, color, onClick, variant }: Props) {
   const buttonStyle = cn(
     "button",
-    {"button--ghost": variant === "ghost"},
-    {"button--blue": color === "blue"}
+    { "button--ghost": variant === "ghost" },
+    { "button--blue": color === "blue" },
+    { "button--cross": variant === "cross" }
   );
 
   return (

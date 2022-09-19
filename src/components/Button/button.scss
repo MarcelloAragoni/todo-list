@@ -9,6 +9,7 @@ $gray: hsl(234, 11%, 52%);
   color: black;
   background-color: transparent;
   cursor:pointer;
+  border: none;
 
   &--ghost{
     border: none;
@@ -16,5 +17,11 @@ $gray: hsl(234, 11%, 52%);
 
   &--blue{
     color: $gray;
+  }
+
+  &--cross{
+    background-image: url("../../../public/images/icon-cross.svg");
+    padding: 0;
+    height: 30px;
   }
 }

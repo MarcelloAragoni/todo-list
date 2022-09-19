@@ -8,6 +8,7 @@
   border: 2px solid darkgray;
   border-radius: 25px;  
   margin: 50px auto;
+  cursor:pointer;
 
     &--checked{
       background: linear-gradient(hsl(192, 100%, 67%),hsl(280, 87%, 65%)); 
