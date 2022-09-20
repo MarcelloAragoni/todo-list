@@ -11,7 +11,7 @@ const Template: ComponentStory<typeof TodoList> = (args) => (
   <TodoList {...args} />
 );
 
-const itensList: Todolist[] = [
+const itemsList: Todolist[] = [
   { text: "testing 1..2..3..4..5" },
   { text: "testing 1..2..3..4..5" },
   { text: "testing 1..2..3..4..5" },
@@ -21,5 +21,5 @@ const itensList: Todolist[] = [
 
 export const Primary = Template.bind({});
 Primary.args = {
-  ItemList: itensList,
+  ItemList: itemsList,
 };

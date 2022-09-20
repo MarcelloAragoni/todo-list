@@ -1,3 +1,7 @@
+$lightblue:hsl(192, 100%, 67%);
+$violet:hsl(280, 87%, 65%);
+
+
 .checkbox{
   -moz-appearance:none;
 	-webkit-appearance:none;
@@ -11,7 +15,7 @@
   cursor:pointer;
 
     &--checked{
-      background: linear-gradient(hsl(192, 100%, 67%),hsl(280, 87%, 65%)); 
+      background: linear-gradient($lightblue,$violet); 
 
       &:checked:after{
         content:"\2713";

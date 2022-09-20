@@ -1,4 +1,4 @@
-import Itemlist from "./ItemList";
+import Item from "./ItemList";
 import "./todolist.scss";
 
 export type Todolist = {
@@ -13,7 +13,7 @@ export default function TodoList({ ItemList }: Props) {
   return (
     <ul className="todo-list">
       {ItemList.map((item) => (
-        <Itemlist itens={item} />
+        <Item items={item} />
       ))}
     </ul>
   );

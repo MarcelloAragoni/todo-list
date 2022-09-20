@@ -3,14 +3,14 @@ import Checkbox from "../Checkbox/Checkbox";
 
 import { Todolist } from "./TodoList";
 
-type Props = { itens: Todolist };
+type Props = { items: Todolist };
 
-export default function Itemlist({ itens }: Props) {
+export default function Item({ items }: Props) {
   return (
-    <div className="todo-list__grid">
+    <li className="todo-list__grid">
       <Checkbox />
-      <li className="todo-list__grid--item">{itens.text}</li>
-      <Button variant="cross" color={""} label={""} />
-    </div>
+      <p className="todo-list__grid--item">{items.text}</p>
+      <Button variant="cross" size="small" />
+    </li>
   );
 }

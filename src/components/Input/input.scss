@@ -1,3 +1,8 @@
+$darkgray:hsl(233, 14%, 35%);;
+$lightgray:hsl(234, 39%, 85%);
+$white: hsl(0, 0%, 98%);
+$darkgrayishblue:hsl(240, 5%, 18%);
+
 .input{
   height: 45px;
   width: 300px;
@@ -7,12 +12,12 @@
   border-radius: 5px;
 
   &--dark{
-    background-color: hsl(233, 14%, 35%);
-    color: hsl(234, 39%, 85%);
+    background-color: $darkgray;
+    color: $lightgray;
   }
 
   &--light{
-    background-color: hsl(0, 0%, 98%);
-    color: hsl(240, 5%, 18%);
+    background-color: $white;
+    color: $darkgrayishblue
   }
 }
