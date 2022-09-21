@@ -9,6 +9,11 @@ $gray: hsl(234, 11%, 52%);
   color: black;
   background-color: transparent;
   cursor:pointer;
+  border: none;
+
+  &--small{
+    height: 30px;
+  }
 
   &--ghost{
     border: none;
@@ -17,4 +22,5 @@ $gray: hsl(234, 11%, 52%);
   &--blue{
     color: $gray;
   }
+  
 }
