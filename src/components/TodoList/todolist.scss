@@ -25,14 +25,7 @@ $gray:hsl(234deg, 11%, 52%);
   
     &:hover .button--cross{
       background-image: url("../../../public/images/icon-cross.svg");
-      padding: 0;
       align-self: center;
     }    
   }
-  
-  .checkbox{
-    align-self: center;
-    margin: 0;
-  }
-
 }
