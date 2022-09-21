@@ -1,9 +1,9 @@
 import Button from "../Button/Button";
 import Checkbox from "../Checkbox/Checkbox";
 
-import { Todolist } from "./TodoList";
+import { Todo } from "./TodoList";
 
-type Props = { items: Todolist };
+type Props = { items: Todo };
 
 export default function Item({ items }: Props) {
   return (

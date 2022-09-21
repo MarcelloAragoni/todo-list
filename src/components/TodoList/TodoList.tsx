@@ -1,12 +1,12 @@
 import Item from "./ItemList";
 import "./todolist.scss";
 
-export type Todolist = {
+export type Todo = {
   text: string;
 };
 
 type Props = {
-  ItemList: Todolist[];
+  ItemList: Todo[];
 };
 
 export default function TodoList({ ItemList }: Props) {

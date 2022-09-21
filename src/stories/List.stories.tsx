@@ -1,6 +1,6 @@
 import { ComponentStory, ComponentMeta } from "@storybook/react";
 
-import TodoList, { Todolist } from "../components/TodoList/TodoList";
+import TodoList, { Todo } from "../components/TodoList/TodoList";
 
 export default {
   title: "Example/List",
@@ -11,7 +11,7 @@ const Template: ComponentStory<typeof TodoList> = (args) => (
   <TodoList {...args} />
 );
 
-const itemsList: Todolist[] = [
+const itemsList: Todo[] = [
   { text: "testing 1..2..3..4..5" },
   { text: "testing 1..2..3..4..5" },
   { text: "testing 1..2..3..4..5" },
