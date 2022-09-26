@@ -1,3 +1,4 @@
+import Counter from "../Counter/Counter";
 import Item from "./ItemList";
 import "./todolist.scss";
 
@@ -15,6 +16,7 @@ export default function TodoList({ ItemList }: Props) {
       {ItemList.map((item) => (
         <Item items={item} />
       ))}
+      <Counter size={ItemList.length} />
     </ul>
   );
 }
