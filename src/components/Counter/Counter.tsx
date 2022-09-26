@@ -5,7 +5,5 @@ type Props = {
 };
 
 export default function Counter({ size }: Props) {
-  return (
-    <p className="TodoList--counter">Quantidade de itens na lista: {size}</p>
-  );
+  return <p className="counter">Quantidade de itens na lista: {size}</p>;
 }
